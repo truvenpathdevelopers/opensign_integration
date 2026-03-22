@@ -1,0 +1,100 @@
+{
+    "name": "OpenSign Template",
+    "module": "OpenSign Integration",
+    "doctype": "DocType",
+    "document_type": "Setup",
+    "naming_rule": "Expression",
+    "autoname": "OSTPL-.######",
+    "track_changes": 1,
+    "engine": "InnoDB",
+    "fields": [
+        {
+            "fieldname": "template_title",
+            "fieldtype": "Data",
+            "label": "Template Title",
+            "reqd": 1,
+            "in_list_view": 1
+        },
+        {
+            "fieldname": "opensign_template_id",
+            "fieldtype": "Data",
+            "label": "OpenSign Template ID",
+            "read_only": 1
+        },
+        {
+            "fieldname": "column_break_1",
+            "fieldtype": "Column Break"
+        },
+        {
+            "fieldname": "is_public",
+            "fieldtype": "Check",
+            "label": "Is Public",
+            "description": "Allow sharing via public link"
+        },
+        {
+            "fieldname": "public_url",
+            "fieldtype": "Data",
+            "label": "Public URL",
+            "read_only": 1,
+            "depends_on": "is_public"
+        },
+        {
+            "fieldname": "template_section",
+            "fieldtype": "Section Break",
+            "label": "Template Configuration"
+        },
+        {
+            "fieldname": "template_file",
+            "fieldtype": "Attach",
+            "label": "Template PDF",
+            "description": "Upload PDF template"
+        },
+        {
+            "fieldname": "roles",
+            "fieldtype": "Small Text",
+            "label": "Roles (JSON)",
+            "description": "JSON array of role names, e.g., [\"Client\", \"Vendor\"]"
+        },
+        {
+            "fieldname": "column_break_tpl",
+            "fieldtype": "Column Break"
+        },
+        {
+            "fieldname": "widgets_config",
+            "fieldtype": "Code",
+            "label": "Widgets Configuration",
+            "options": "JSON",
+            "description": "Widget configurations for each role"
+        },
+        {
+            "fieldname": "usage_section",
+            "fieldtype": "Section Break",
+            "label": "Usage Statistics",
+            "collapsible": 1
+        },
+        {
+            "fieldname": "documents_created",
+            "fieldtype": "Int",
+            "label": "Documents Created",
+            "read_only": 1,
+            "default": "0"
+        },
+        {
+            "fieldname": "last_used",
+            "fieldtype": "Datetime",
+            "label": "Last Used",
+            "read_only": 1
+        }
+    ],
+    "permissions": [
+        {
+            "role": "System Manager",
+            "read": 1,
+            "write": 1,
+            "create": 1,
+            "delete": 1
+        }
+    ],
+    "sort_field": "modified",
+    "sort_order": "DESC"
+}

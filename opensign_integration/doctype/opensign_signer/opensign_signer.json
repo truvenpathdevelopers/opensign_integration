@@ -1,0 +1,118 @@
+{
+    "name": "OpenSign Signer",
+    "module": "OpenSign Integration",
+    "doctype": "DocType",
+    "istable": 1,
+    "editable_grid": 1,
+    "track_changes": 0,
+    "engine": "InnoDB",
+    "fields": [
+        {
+            "fieldname": "signer_name",
+            "fieldtype": "Data",
+            "label": "Signer Name",
+            "in_list_view": 1,
+            "reqd": 1
+        },
+        {
+            "fieldname": "email",
+            "fieldtype": "Data",
+            "label": "Email",
+            "in_list_view": 1,
+            "reqd": 1,
+            "options": "Email"
+        },
+        {
+            "fieldname": "phone",
+            "fieldtype": "Data",
+            "label": "Phone"
+        },
+        {
+            "fieldname": "role",
+            "fieldtype": "Data",
+            "label": "Role",
+            "description": "Role in template-based signing"
+        },
+        {
+            "fieldname": "status",
+            "fieldtype": "Select",
+            "label": "Status",
+            "options": "Pending\nViewed\nSigned\nDeclined",
+            "default": "Pending",
+            "in_list_view": 1
+        },
+        {
+            "fieldname": "signed_at",
+            "fieldtype": "Datetime",
+            "label": "Signed At",
+            "read_only": 1
+        },
+        {
+            "fieldname": "ip_address",
+            "fieldtype": "Data",
+            "label": "IP Address",
+            "read_only": 1
+        },
+        {
+            "fieldname": "signature_section",
+            "fieldtype": "Section Break",
+            "label": "Signature Position",
+            "collapsible": 1
+        },
+        {
+            "fieldname": "signature_page",
+            "fieldtype": "Int",
+            "label": "Signature Page",
+            "default": "1"
+        },
+        {
+            "fieldname": "signature_x",
+            "fieldtype": "Int",
+            "label": "X Position",
+            "default": "350"
+        },
+        {
+            "fieldname": "signature_y",
+            "fieldtype": "Int",
+            "label": "Y Position",
+            "default": "600"
+        },
+        {
+            "fieldname": "column_break_sig",
+            "fieldtype": "Column Break"
+        },
+        {
+            "fieldname": "signature_width",
+            "fieldtype": "Int",
+            "label": "Width",
+            "default": "150"
+        },
+        {
+            "fieldname": "signature_height",
+            "fieldtype": "Int",
+            "label": "Height",
+            "default": "50"
+        },
+        {
+            "fieldname": "include_date",
+            "fieldtype": "Check",
+            "label": "Include Date Widget",
+            "default": 1
+        },
+        {
+            "fieldname": "date_x",
+            "fieldtype": "Int",
+            "label": "Date X Position",
+            "default": "350"
+        },
+        {
+            "fieldname": "date_y",
+            "fieldtype": "Int",
+            "label": "Date Y Position",
+            "default": "540"
+        }
+    ],
+    "permissions": [],
+    "sort_field": "modified",
+    "sort_order": "DESC"
+}

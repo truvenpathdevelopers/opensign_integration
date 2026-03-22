@@ -1,0 +1,43 @@
+{
+    "name": "OpenSign Activity Log",
+    "module": "OpenSign Integration",
+    "doctype": "DocType",
+    "istable": 1,
+    "editable_grid": 0,
+    "track_changes": 0,
+    "engine": "InnoDB",
+    "fields": [
+        {
+            "fieldname": "event",
+            "fieldtype": "Select",
+            "label": "Event",
+            "options": "Created\nSent\nViewed\nSigned\nDeclined\nCompleted\nRevoked\nExpired\nResent",
+            "in_list_view": 1
+        },
+        {
+            "fieldname": "signer_email",
+            "fieldtype": "Data",
+            "label": "Signer Email",
+            "in_list_view": 1
+        },
+        {
+            "fieldname": "timestamp",
+            "fieldtype": "Datetime",
+            "label": "Timestamp",
+            "in_list_view": 1
+        },
+        {
+            "fieldname": "ip_address",
+            "fieldtype": "Data",
+            "label": "IP Address"
+        },
+        {
+            "fieldname": "details",
+            "fieldtype": "Small Text",
+            "label": "Details"
+        }
+    ],
+    "permissions": [],
+    "sort_field": "modified",
+    "sort_order": "DESC"
+}
