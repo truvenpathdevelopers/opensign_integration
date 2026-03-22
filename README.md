@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 # OpenSign Integration for Frappe/ERPNext
 
 A complete integration of [OpenSign](https://opensignlabs.com) digital signature platform with Frappe Framework. Send documents for e-signature, track signing status, and manage signature workflows directly from your Frappe/ERPNext system.
