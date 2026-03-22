@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # OpenSign Integration for Frappe/ERPNext
 
 A complete integration of [OpenSign](https://opensignlabs.com) digital signature platform with Frappe Framework. Send documents for e-signature, track signing status, and manage signature workflows directly from your Frappe/ERPNext system.
@@ -579,3 +580,6 @@ MIT License - see LICENSE file for details.
 - **Documentation**: https://docs.opensignlabs.com
 - **GitHub Issues**: [Report bugs](https://github.com/your-org/opensign_integration/issues)
 - **OpenSign Support**: support@opensignlabs.com
+=======
+# opensign_integration
+>>>>>>> aa638109c1e231fbc359e144bb66c57be8ebc504
