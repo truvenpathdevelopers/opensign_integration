@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: opensign-integration
+Version: 1.0.0
+Summary: OpenSign API Integration for Digital Signatures in Frappe/ERPNext
+Author: Your Company
+Author-email: info@yourcompany.com
+Requires-Python: >=3.8
